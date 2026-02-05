@@ -5,7 +5,7 @@
 class Stackinator < Formula
   desc "Minimal CLI tool for managing stacked branches and syncing them to GitHub Pull Requests"
   homepage "https://github.com/javoire/stackinator"
-  version "1.14.0"
+  version "1.15.0"
   license "MIT"
 
   depends_on "gh"
@@ -13,16 +13,16 @@ class Stackinator < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/javoire/stackinator/releases/download/v1.14.0/stackinator_Darwin_x86_64.tar.gz"
-      sha256 "816dec52e372e5b09a6f1e4343ea9fc8a7f9a5f94c7e9b55a879f6500efc7bb3"
+      url "https://github.com/javoire/stackinator/releases/download/v1.15.0/stackinator_Darwin_x86_64.tar.gz"
+      sha256 "65d0f34f1174dda0aec55126688e597b25f305c80e6176d07e3cdd7edb692361"
 
       def install
         bin.install "stack"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/javoire/stackinator/releases/download/v1.14.0/stackinator_Darwin_arm64.tar.gz"
-      sha256 "f3c64305644d3484c288d71cd75dc128eb7b55751b270d0e3496dcab55efae57"
+      url "https://github.com/javoire/stackinator/releases/download/v1.15.0/stackinator_Darwin_arm64.tar.gz"
+      sha256 "6cf69390441cff03667be46591511636f9e977b6ce07fa73de6582abda9d15cc"
 
       def install
         bin.install "stack"
@@ -32,15 +32,15 @@ class Stackinator < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/javoire/stackinator/releases/download/v1.14.0/stackinator_Linux_x86_64.tar.gz"
-      sha256 "25dd95fae09f592e71346671b4ae83de83c375d42f089574c2a0dbfdd2f8e1e6"
+      url "https://github.com/javoire/stackinator/releases/download/v1.15.0/stackinator_Linux_x86_64.tar.gz"
+      sha256 "f647d64134a62e43377ce249e723b7e9c7fa836de755fb4ddc48176608407073"
       def install
         bin.install "stack"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/javoire/stackinator/releases/download/v1.14.0/stackinator_Linux_arm64.tar.gz"
-      sha256 "88b26ac371da710df0f64994913477bc2149c44bce421709e4e2e8e5323b14b6"
+      url "https://github.com/javoire/stackinator/releases/download/v1.15.0/stackinator_Linux_arm64.tar.gz"
+      sha256 "7fef7988a51bf7661a517ada89e0d990f167b2768d30517da02268e46e307087"
       def install
         bin.install "stack"
       end
